@@ -63,11 +63,6 @@ class BM(object):
 
             # then collect stats
             w_stats_example, b_stats_example = self.collect_stats(state)
-            # print 'hidden', state[:self.num_hidden]
-            # print 'visible', state[self.num_hidden:]
-            # print w_stats_example
-            # print b_stats_example
-            # raw_input()
             w_stats.append(w_stats_example)
             b_stats.append(b_stats_example)
 
@@ -153,7 +148,7 @@ if __name__ == '__main__':
     dim = 16  # resize dimention
     h = 4  # number of hidden units
 
-    # selecting random set of MNIST digits
+    # uncomment selecting random set of MNIST digits
     # data, target = get_mnist(random=True, num=200)
     # data = binarize(np.vstack([
     #     resize(item.reshape(28, 28), (dim, dim)).ravel()
